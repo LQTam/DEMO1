@@ -1,0 +1,225 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper {
+  border: 1px solid black;
+  width: 600px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.wrapper .clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.wrapper .header {
+  overflow: hidden;
+  background: cyan;
+}
+
+.wrapper .header .img {
+  float: left;
+  padding: 10px;
+}
+
+.wrapper .header .img img {
+  border-radius: 50%;
+}
+
+.wrapper .header .img .name {
+  float: right;
+  margin-left: 15px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.wrapper .header .img h2 {
+  color: white;
+}
+
+.wrapper .header .info {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.wrapper .header .info i {
+  display: block;
+  line-height: 30px;
+  color: #706767;
+}
+
+.wrapper .header .info i span {
+  display: inline;
+  padding: 5px;
+}
+
+.wrapper .content {
+  background: rgba(119, 113, 113, 0.3);
+  overflow: hidden;
+}
+
+.wrapper .content .left {
+  float: left;
+  width: 45%;
+  position: relative;
+  margin-left: 10px;
+}
+
+.wrapper .content .left .infoBase {
+  margin: 10px 10px 10px 0;
+}
+
+.wrapper .content .left .infoBase label {
+  display: inline-block;
+  width: 100px;
+}
+
+.wrapper .content .left .infoBase legend {
+  margin-bottom: 17px;
+}
+
+.wrapper .content .left .infoBase legend::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  background: gray;
+  margin-top: 8px;
+  right: 10px;
+}
+
+.wrapper .content .left .focus {
+  margin-top: 5px;
+}
+
+.wrapper .content .left .focus legend {
+  margin-bottom: 17px;
+}
+
+.wrapper .content .left .focus legend::before {
+  content: "";
+  width: 75px;
+  height: 2px;
+  position: absolute;
+  background: gray;
+  margin-top: 8px;
+  right: 0;
+}
+
+.wrapper .content .left .language {
+  margin-top: 10px;
+}
+
+.wrapper .content .left .language span {
+  display: inline-block;
+  width: 130px;
+  padding: 5px;
+}
+
+.wrapper .content .left .language legend {
+  margin-bottom: 17px;
+}
+
+.wrapper .content .left .language legend::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  background: gray;
+  margin-top: 8px;
+  left: 96px;
+}
+
+.wrapper .content .left .skill legend {
+  margin-bottom: 17px;
+}
+
+.wrapper .content .left .skill legend::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  background: gray;
+  margin-top: 8px;
+  left: 87px;
+}
+
+.wrapper .content .left .skill i {
+  color: gray;
+  margin-right: 5px;
+}
+
+.wrapper .content .left .skill .show {
+  color: yellow;
+}
+
+.wrapper .content .right {
+  margin-top: 10px;
+  float: right;
+  width: 50%;
+  position: relative;
+}
+
+.wrapper .content .right .expWork legend {
+  margin-bottom: 17px;
+}
+
+.wrapper .content .right .expWork legend::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  background: gray;
+  margin-top: 8px;
+  right: 0;
+}
+
+.wrapper .content .right .expWork label {
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.wrapper .content .right .hocvan legend {
+  margin-bottom: 17px;
+}
+
+.wrapper .content .right .hocvan legend::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  background: gray;
+  margin-top: 8px;
+  left: 80px;
+}
+
+.wrapper .content .right .hocvan label {
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.wrapper .content::before {
+  position: absolute;
+  background: gray;
+  height: 700px;
+  max-height: 800px;
+  left: 48%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: "";
+  width: 1px;
+}
+/*# sourceMappingURL=style.css.map */

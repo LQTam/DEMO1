@@ -1,0 +1,191 @@
+*{box-sizing: border-box}
+body{
+    padding:0;
+    margin:0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper{
+    border:1px solid black;
+    width:600px;
+    position: relative;
+    margin:0 auto;
+    .clearfix{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .header{
+        overflow: hidden;
+        background: cyan;
+        .img{
+            float:left;
+            padding:10px;
+            img{
+                border-radius: 50%;
+            }
+            .name{
+                float:right;
+                margin-left: 15px;
+                margin-top: 10px;
+                font-size: 20px;
+            }
+            h2{
+                color:white;
+            }
+        }
+        
+        .info{
+            float:right;
+            margin-right:20px;
+            margin-top: 20px;
+            i{
+                display: block;
+                line-height: 30px;
+                color:rgb(112, 103, 103);
+                span{display:inline;
+                padding:5px;}
+            }
+        }
+        
+    }
+    .content{
+        background:rgba(119, 113, 113,0.3);
+        overflow: hidden;
+        .left{float:left;
+            width:45%;
+            position: relative;
+            margin-left: 10px;
+            .infoBase{
+                margin: 10px 10px 10px 0;
+                label{
+                    display: inline-block;
+                    width:100px;
+                }
+                legend{
+                    margin-bottom: 17px;
+                }
+                legend::before{
+                    content: "";
+                    width:100px;
+                    height:2px;
+                    position: absolute;
+                    background:gray;
+                    margin-top: 8px;
+                    right:10px;
+                }
+            }
+            .focus{
+                margin-top: 5px;
+                legend{
+                    margin-bottom: 17px;
+                }
+                legend::before{
+                    content: "";
+                    width:75px;
+                    height:2px;
+                    position: absolute;
+                    background:gray;
+                    margin-top: 8px;
+                    right:0;
+                }
+            }
+            .language{
+                margin-top: 10px;
+                span{
+                    display: inline-block;
+                    width:130px;
+                    padding:5px;
+                }
+                legend{
+                    margin-bottom: 17px;
+                }
+                legend::before{
+                    content: "";
+                    width:100px;
+                    height:2px;
+                    position: absolute;
+                    background:gray;
+                    margin-top: 8px;
+                    left:96px;
+                }
+            }
+            .skill{
+                legend{
+                    margin-bottom: 17px;
+                }
+                legend::before{
+                    content: "";
+                    width:100px;
+                    height:2px;
+                    position: absolute;
+                    background:gray;
+                    margin-top: 8px;
+                    left:87px;
+                }
+                i{
+                    color: gray;
+                    margin-right: 5px;
+                }
+                .show{
+                    color:yellow;
+                }
+            }
+        }
+        
+        .right{
+            margin-top: 10px;
+            float:right;
+            width:50%;
+            position: relative;
+            .expWork{
+                legend{
+                    margin-bottom: 17px;
+                }
+                legend::before{
+                    content: "";
+                    width:100px;
+                    height:2px;
+                    position: absolute;
+                    background:gray;
+                    margin-top: 8px;
+                    right:0;
+                }
+                label{
+                    display: inline-block;
+                    width:100px;
+                    margin-bottom: 5px;
+                }
+            }
+            .hocvan{
+                legend{
+                    margin-bottom: 17px;
+                }
+                legend::before{
+                    content: "";
+                    width:100px;
+                    height:2px;
+                    position: absolute;
+                    background:gray;
+                    margin-top: 8px;
+                    left:80px;
+                }
+                label{
+                    display: inline-block;
+                    width:100px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    .content::before{
+        position: absolute;
+        background:gray;
+        height:700px;
+        max-height:800px;   
+        left:48%;
+        transform: translateX(-50%);
+        content:"";
+        width:1px;
+    }
+}
